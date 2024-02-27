@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-home',
   standalone: true,
   imports: [
       CommonModule,
-      ButtonComponent,
+      HeaderComponent,
   ],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent { }
+export class HomeComponent { }
